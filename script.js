@@ -7,52 +7,52 @@ let slideInterval;
 const galleryImages = [
     {
         url: 'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800',
-        caption: 'Modern Campus Buildings'
+        caption: 'Современные здания кампуса'
     },
     {
         url: 'https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800',
-        caption: 'State-of-the-art Laboratories'
+        caption: 'Современные лаборатории'
     },
     {
         url: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800',
-        caption: 'Library and Study Areas'
+        caption: 'Библиотека и учебные зоны'
     },
     {
         url: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-        caption: 'Graduation Ceremonies'
+        caption: 'Церемонии выпуска'
     },
     {
         url: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-        caption: 'Student Activities'
+        caption: 'Студенческая деятельность'
     },
     {
         url: 'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800',
-        caption: 'Technology Centers'
+        caption: 'Технологические центры'
     }
 ];
 
 // Search Data
 const searchData = [
-    'Computer Science Program',
-    'Business Administration',
-    'Engineering Courses',
-    'Healthcare Studies',
-    'Admission Requirements',
-    'Application Process',
-    'Student Portal',
-    'Academic Calendar',
-    'Faculty Information',
-    'Campus Facilities',
-    'Library Resources',
-    'Contact Information',
-    'Scholarships',
-    'Financial Aid',
-    'Course Catalog',
-    'Registration',
-    'Graduation Requirements',
-    'Campus Events',
-    'Student Services',
-    'Career Services'
+    'Программа информатики',
+    'Бизнес-администрирование',
+    'Инженерные курсы',
+    'Изучение здравоохранения',
+    'Требования к поступлению',
+    'Процесс подачи заявления',
+    'Студенческий портал',
+    'Академический календарь',
+    'Информация о преподавателях',
+    'Объекты кампуса',
+    'Ресурсы библиотеки',
+    'Контактная информация',
+    'Стипендии',
+    'Финансовая помощь',
+    'Каталог курсов',
+    'Регистрация',
+    'Требования к выпуску',
+    'События кампуса',
+    'Студенческие услуги',
+    'Карьерные услуги'
 ];
 
 // Initialize when DOM is loaded
@@ -202,7 +202,7 @@ function closeSearch() {
     }
     
     if (searchResults) {
-        searchResults.innerHTML = '<div class="search-placeholder">Start typing to search...</div>';
+        searchResults.innerHTML = '<div class="search-placeholder">Начните печатать для поиска...</div>';
     }
 }
 
@@ -213,7 +213,7 @@ function handleSearch(event) {
     if (!searchResults) return;
     
     if (query === '') {
-        searchResults.innerHTML = '<div class="search-placeholder">Start typing to search...</div>';
+        searchResults.innerHTML = '<div class="search-placeholder">Начните печатать для поиска...</div>';
         return;
     }
     
@@ -223,7 +223,7 @@ function handleSearch(event) {
     
     if (filteredResults.length > 0) {
         const resultsHTML = `
-            <h3 style="font-size: 0.9rem; font-weight: 600; color: #666; margin-bottom: 12px;">Search Results</h3>
+            <h3 style="font-size: 0.9rem; font-weight: 600; color: #666; margin-bottom: 12px;">Результаты поиска</h3>
             <div style="display: flex; flex-direction: column; gap: 8px;">
                 ${filteredResults.map(result => `
                     <div class="search-result-item">${result}</div>
@@ -232,7 +232,7 @@ function handleSearch(event) {
         `;
         searchResults.innerHTML = resultsHTML;
     } else {
-        searchResults.innerHTML = `<div class="search-placeholder">No results found for "${query}"</div>`;
+        searchResults.innerHTML = `<div class="search-placeholder">Результаты не найдены для "${query}"</div>`;
     }
 }
 
@@ -272,14 +272,14 @@ function submitApplication(event) {
     const submitBtn = event.target.querySelector('.submit-btn');
     const originalText = submitBtn.innerHTML;
     
-    submitBtn.innerHTML = 'Submitting...';
+    submitBtn.innerHTML = 'Отправка...';
     submitBtn.disabled = true;
     
     setTimeout(() => {
-        alert('Application submitted successfully! We will contact you soon.');
+        alert('Заявление успешно отправлено! Мы свяжемся с вами в ближайшее время.');
         event.target.reset();
-        submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
     }, 2000);
 }
 
@@ -290,14 +290,14 @@ function submitContactForm(event) {
     const submitBtn = event.target.querySelector('.submit-btn');
     const originalText = submitBtn.innerHTML;
     
-    submitBtn.innerHTML = 'Sending...';
+    submitBtn.innerHTML = 'Отправка...';
     submitBtn.disabled = true;
     
     setTimeout(() => {
-        alert('Thank you for your message! We will get back to you soon.');
+        alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
         event.target.reset();
-        submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
     }, 2000);
 }
 
@@ -308,14 +308,14 @@ function loginStudent(event) {
     const loginBtn = event.target.querySelector('.login-btn');
     const originalText = loginBtn.innerHTML;
     
-    loginBtn.innerHTML = 'Logging in...';
+    loginBtn.innerHTML = 'Вход...';
     loginBtn.disabled = true;
     
     setTimeout(() => {
-        alert('Login successful! Redirecting to student portal...');
+        alert('Вход выполнен успешно! Перенаправление в студенческий портал...');
         event.target.reset();
-        loginBtn.innerHTML = originalText;
         loginBtn.disabled = false;
+        loginBtn.innerHTML = originalText;
     }, 2000);
 }
 

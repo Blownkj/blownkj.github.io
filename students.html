@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students - Example College</title>
-    <meta name="description" content="Student portal for Example College - Access your timetable, specializations, and academic resources.">
+    <title>Студентам - Пермский колледж</title>
+    <meta name="description" content="Студенческий портал Пермского колледжа - Доступ к расписанию, специализациям и академическим ресурсам.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -21,17 +21,17 @@
                         </svg>
                     </div>
                     <div class="college-info">
-                        <h1>Example College</h1>
-                        <p>Excellence in Education</p>
+                        <h1>Пермский колледж</h1>
+                        <p>Ученье - свет</p>
                     </div>
                 </a>
                 
                 <nav class="nav-desktop">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="abitur.html" class="nav-link">Admissions</a>
-                    <a href="students.html" class="nav-link active">Students</a>
-                    <a href="about.html" class="nav-link">About Us</a>
-                    <a href="contacts.html" class="nav-link">Contacts</a>
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="abitur.html" class="nav-link">Поступление</a>
+                    <a href="Students.html" class="nav-link active">Студентам</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="Contacts.html" class="nav-link">Контакты</a>
                 </nav>
                 
                 <div class="header-actions">
@@ -51,11 +51,11 @@
             
             <!-- Mobile Navigation -->
             <nav class="nav-mobile">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="abitur.html" class="nav-link">Admissions</a>
-                <a href="students.html" class="nav-link active">Students</a>
-                <a href="about.html" class="nav-link">About Us</a>
-                <a href="contacts.html" class="nav-link">Contacts</a>
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="abitur.html" class="nav-link">Поступление</a>
+                <a href="Students.html" class="nav-link active">Студентам</a>
+                <a href="about.html" class="nav-link">О нас</a>
+                <a href="Contacts.html" class="nav-link">Контакты</a>
             </nav>
         </div>
     </header>
@@ -65,8 +65,8 @@
         <!-- Hero Section -->
         <section class="page-hero">
             <div class="hero-content">
-                <h1>Student Portal</h1>
-                <p>Your gateway to academic success and resources</p>
+                <h1>Студенческий портал</h1>
+                <p>Ваш путь к академическому успеху и ресурсам</p>
             </div>
         </section>
 
@@ -81,14 +81,14 @@
                             <line x1="8" y1="2" x2="8" y2="6"/>
                             <line x1="3" y1="10" x2="21" y2="10"/>
                         </svg>
-                        <h2>Weekly Timetable</h2>
+                        <h2>Еженедельное расписание</h2>
                     </div>
                     <div class="week-selector">
-                        <span>Week</span>
+                        <span>Неделя</span>
                         <select id="weekSelect" onchange="changeWeek(this.value)">
-                            <option value="0">Current Week</option>
-                            <option value="1">Next Week</option>
-                            <option value="2">Week 3</option>
+                            <option value="0">Текущая неделя</option>
+                            <option value="1">Следующая неделя</option>
+                            <option value="2">3-я неделя</option>
                         </select>
                     </div>
                 </div>
@@ -96,18 +96,18 @@
                 <div class="timetable-container">
                     <div class="timetable-grid">
                         <div class="day-column">
-                            <h3>Monday</h3>
+                            <h3>Понедельник</h3>
                             <div class="class-item">
                                 <div class="class-time">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <circle cx="12" cy="12" r="10"/>
                                         <polyline points="12,6 12,12 16,14"/>
                                     </svg>
-                                    9:00 AM
+                                    9:00
                                 </div>
-                                <h4>Data Structures</h4>
-                                <p>CS-101</p>
-                                <span>Dr. Smith</span>
+                                <h4>Структуры данных</h4>
+                                <p>ИС-101</p>
+                                <span>Др. Смирнов</span>
                             </div>
                             <div class="class-item">
                                 <div class="class-time">
@@ -115,11 +115,11 @@
                                         <circle cx="12" cy="12" r="10"/>
                                         <polyline points="12,6 12,12 16,14"/>
                                     </svg>
-                                    11:00 AM
+                                    11:00
                                 </div>
-                                <h4>Mathematics</h4>
-                                <p>M-205</p>
-                                <span>Prof. Davis</span>
+                                <h4>Математика</h4>
+                                <p>М-205</p>
+                                <span>Проф. Давыдов</span>
                             </div>
                             <div class="class-item">
                                 <div class="class-time">
@@ -127,67 +127,27 @@
                                         <circle cx="12" cy="12" r="10"/>
                                         <polyline points="12,6 12,12 16,14"/>
                                     </svg>
-                                    2:00 PM
+                                    14:00
                                 </div>
-                                <h4>Web Development</h4>
-                                <p>CS-102</p>
-                                <span>Ms. Johnson</span>
-                            </div>
-                        </div>
-
-                        <div class="day-column">
-                            <h3>Tuesday</h3>
-                            <div class="class-item">
-                                <div class="class-time">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12,6 12,12 16,14"/>
-                                    </svg>
-                                    10:00 AM
-                                </div>
-                                <h4>Database Systems</h4>
-                                <p>CS-103</p>
-                                <span>Dr. Wilson</span>
-                            </div>
-                            <div class="class-item">
-                                <div class="class-time">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12,6 12,12 16,14"/>
-                                    </svg>
-                                    1:00 PM
-                                </div>
-                                <h4>Software Engineering</h4>
-                                <p>CS-101</p>
-                                <span>Prof. Brown</span>
-                            </div>
-                            <div class="class-item">
-                                <div class="class-time">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12,6 12,12 16,14"/>
-                                    </svg>
-                                    3:00 PM
-                                </div>
-                                <h4>Computer Networks</h4>
-                                <p>CS-104</p>
-                                <span>Dr. Lee</span>
+                                <h4>Веб-разработка</h4>
+                                <p>ИС-102</p>
+                                <span>Мс. Иванова</span>
                             </div>
                         </div>
 
                         <div class="day-column">
-                            <h3>Wednesday</h3>
+                            <h3>Вторник</h3>
                             <div class="class-item">
                                 <div class="class-time">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <circle cx="12" cy="12" r="10"/>
                                         <polyline points="12,6 12,12 16,14"/>
                                     </svg>
-                                    9:00 AM
+                                    10:00
                                 </div>
-                                <h4>Algorithms</h4>
-                                <p>CS-105</p>
-                                <span>Dr. Taylor</span>
+                                <h4>Системы баз данных</h4>
+                                <p>ИС-103</p>
+                                <span>Др. Вильсон</span>
                             </div>
                             <div class="class-item">
                                 <div class="class-time">
@@ -195,11 +155,11 @@
                                         <circle cx="12" cy="12" r="10"/>
                                         <polyline points="12,6 12,12 16,14"/>
                                     </svg>
-                                    11:00 AM
+                                    13:00
                                 </div>
-                                <h4>Operating Systems</h4>
-                                <p>CS-106</p>
-                                <span>Prof. Martinez</span>
+                                <h4>Инженерия программного обеспечения</h4>
+                                <p>ИС-101</p>
+                                <span>Проф. Браун</span>
                             </div>
                             <div class="class-item">
                                 <div class="class-time">
@@ -207,67 +167,27 @@
                                         <circle cx="12" cy="12" r="10"/>
                                         <polyline points="12,6 12,12 16,14"/>
                                     </svg>
-                                    2:00 PM
+                                    15:00
                                 </div>
-                                <h4>Mobile Development</h4>
-                                <p>CS-107</p>
-                                <span>Ms. Anderson</span>
-                            </div>
-                        </div>
-
-                        <div class="day-column">
-                            <h3>Thursday</h3>
-                            <div class="class-item">
-                                <div class="class-time">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12,6 12,12 16,14"/>
-                                    </svg>
-                                    10:00 AM
-                                </div>
-                                <h4>Machine Learning</h4>
-                                <p>CS-108</p>
-                                <span>Dr. Kim</span>
-                            </div>
-                            <div class="class-item">
-                                <div class="class-time">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12,6 12,12 16,14"/>
-                                    </svg>
-                                    1:00 PM
-                                </div>
-                                <h4>Cybersecurity</h4>
-                                <p>CS-109</p>
-                                <span>Prof. Garcia</span>
-                            </div>
-                            <div class="class-item">
-                                <div class="class-time">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12,6 12,12 16,14"/>
-                                    </svg>
-                                    3:00 PM
-                                </div>
-                                <h4>Data Mining</h4>
-                                <p>CS-110</p>
-                                <span>Dr. White</span>
+                                <h4>Компьютерные сети</h4>
+                                <p>ИС-104</p>
+                                <span>Др. Лебедев</span>
                             </div>
                         </div>
 
                         <div class="day-column">
-                            <h3>Friday</h3>
+                            <h3>Среда</h3>
                             <div class="class-item">
                                 <div class="class-time">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <circle cx="12" cy="12" r="10"/>
                                         <polyline points="12,6 12,12 16,14"/>
                                     </svg>
-                                    9:00 AM
+                                    9:00
                                 </div>
-                                <h4>Project Workshop</h4>
-                                <p>CS-111</p>
-                                <span>Team Faculty</span>
+                                <h4>Алгоритмы</h4>
+                                <p>ИС-105</p>
+                                <span>Др. Тейлор</span>
                             </div>
                             <div class="class-item">
                                 <div class="class-time">
@@ -275,11 +195,91 @@
                                         <circle cx="12" cy="12" r="10"/>
                                         <polyline points="12,6 12,12 16,14"/>
                                     </svg>
-                                    11:00 AM
+                                    11:00
                                 </div>
-                                <h4>Seminar</h4>
-                                <p>Auditorium</p>
-                                <span>Guest Speaker</span>
+                                <h4>Операционные системы</h4>
+                                <p>ИС-106</p>
+                                <span>Проф. Мартинес</span>
+                            </div>
+                            <div class="class-item">
+                                <div class="class-time">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    14:00
+                                </div>
+                                <h4>Мобильная разработка</h4>
+                                <p>ИС-107</p>
+                                <span>Мс. Андерсон</span>
+                            </div>
+                        </div>
+
+                        <div class="day-column">
+                            <h3>Четверг</h3>
+                            <div class="class-item">
+                                <div class="class-time">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    10:00
+                                </div>
+                                <h4>Машинное обучение</h4>
+                                <p>ИС-108</p>
+                                <span>Др. Ким</span>
+                            </div>
+                            <div class="class-item">
+                                <div class="class-time">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    13:00
+                                </div>
+                                <h4>Кибербезопасность</h4>
+                                <p>ИС-109</p>
+                                <span>Проф. Гарсия</span>
+                            </div>
+                            <div class="class-item">
+                                <div class="class-time">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    15:00
+                                </div>
+                                <h4>Данные для анализа</h4>
+                                <p>ИС-110</p>
+                                <span>Др. Белый</span>
+                            </div>
+                        </div>
+
+                        <div class="day-column">
+                            <h3>Пятница</h3>
+                            <div class="class-item">
+                                <div class="class-time">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    9:00
+                                </div>
+                                <h4>Работа над проектом</h4>
+                                <p>ИС-111</p>
+                                <span>Команда преподавателей</span>
+                            </div>
+                            <div class="class-item">
+                                <div class="class-time">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    11:00
+                                </div>
+                                <h4>Семинар</h4>
+                                <p>Аудитория</p>
+                                <span>Гостевой спикер</span>
                             </div>
                         </div>
                     </div>
@@ -290,134 +290,134 @@
         <!-- Specializations -->
         <section class="specializations-section">
             <div class="container">
-                <h2>Academic Specializations</h2>
+                <h2>Академические специализации</h2>
                 <div class="specializations-grid">
                     <div class="specializations-list">
                         <button class="specialization-btn active" onclick="selectSpecialization('computer-science', this)">
-                            Computer Science
+                            Информатика
                         </button>
                         <button class="specialization-btn" onclick="selectSpecialization('business', this)">
-                            Business Administration
+                            Бизнес-администрирование
                         </button>
                         <button class="specialization-btn" onclick="selectSpecialization('engineering', this)">
-                            Engineering
+                            Инженерия
                         </button>
                         <button class="specialization-btn" onclick="selectSpecialization('healthcare', this)">
-                            Healthcare
+                            Здравоохранение
                         </button>
                     </div>
 
                     <div class="specialization-details">
                         <div id="computer-science" class="specialization-content active">
-                            <h3>Computer Science</h3>
-                            <p>Comprehensive program focusing on programming, software development, and computer systems.</p>
+                            <h3>Информатика</h3>
+                            <p>Комплексная программа, ориентированная на программирование, разработку программного обеспечения и компьютерные системы.</p>
                             
                             <div class="specialization-info">
                                 <div class="info-section">
-                                    <h4>Program Details</h4>
+                                    <h4>Детали программы</h4>
                                     <ul>
-                                        <li>Faculty: Dr. Sarah Johnson</li>
-                                        <li>Credits Required: 120</li>
-                                        <li>Duration: 4 years</li>
+                                        <li>Факультет: Др. Сара Джонсон</li>
+                                        <li>Требуемые кредиты: 120</li>
+                                        <li>Продолжительность: 4 года</li>
                                     </ul>
                                 </div>
                                 <div class="info-section">
-                                    <h4>Core Courses</h4>
+                                    <h4>Основные курсы</h4>
                                     <ul>
-                                        <li>• Data Structures</li>
-                                        <li>• Algorithms</li>
-                                        <li>• Database Systems</li>
-                                        <li>• Web Development</li>
-                                        <li>• Software Engineering</li>
+                                        <li>• Структуры данных</li>
+                                        <li>• Алгоритмы</li>
+                                        <li>• Системы баз данных</li>
+                                        <li>• Веб-разработка</li>
+                                        <li>• Инженерия программного обеспечения</li>
                                     </ul>
                                 </div>
                             </div>
                             
-                            <button class="view-curriculum-btn">View Full Curriculum</button>
+                            <button class="view-curriculum-btn">Посмотреть полную программу</button>
                         </div>
 
                         <div id="business" class="specialization-content">
-                            <h3>Business Administration</h3>
-                            <p>Develop leadership and management skills for the modern business world.</p>
+                            <h3>Бизнес-администрирование</h3>
+                            <p>Развитие лидерских и управленческих навыков для современного бизнес-мира.</p>
                             
                             <div class="specialization-info">
                                 <div class="info-section">
-                                    <h4>Program Details</h4>
+                                    <h4>Детали программы</h4>
                                     <ul>
-                                        <li>Faculty: Prof. Michael Chen</li>
-                                        <li>Credits Required: 120</li>
-                                        <li>Duration: 4 years</li>
+                                        <li>Факультет: Проф. Майкл Чен</li>
+                                        <li>Требуемые кредиты: 120</li>
+                                        <li>Продолжительность: 4 года</li>
                                     </ul>
                                 </div>
                                 <div class="info-section">
-                                    <h4>Core Courses</h4>
+                                    <h4>Основные курсы</h4>
                                     <ul>
-                                        <li>• Marketing</li>
-                                        <li>• Finance</li>
-                                        <li>• Management</li>
-                                        <li>• Economics</li>
-                                        <li>• Business Law</li>
+                                        <li>• Маркетинг</li>
+                                        <li>• Финансы</li>
+                                        <li>• Менеджмент</li>
+                                        <li>• Экономика</li>
+                                        <li>• Бизнес-право</li>
                                     </ul>
                                 </div>
                             </div>
                             
-                            <button class="view-curriculum-btn">View Full Curriculum</button>
+                            <button class="view-curriculum-btn">Посмотреть полную программу</button>
                         </div>
 
                         <div id="engineering" class="specialization-content">
-                            <h3>Engineering</h3>
-                            <p>Civil, Mechanical, and Electrical engineering with hands-on experience.</p>
+                            <h3>Инженерия</h3>
+                            <p>Гражданская, механическая и электротехническая инженерия с практическим опытом.</p>
                             
                             <div class="specialization-info">
                                 <div class="info-section">
-                                    <h4>Program Details</h4>
+                                    <h4>Детали программы</h4>
                                     <ul>
-                                        <li>Faculty: Dr. Emily Rodriguez</li>
-                                        <li>Credits Required: 128</li>
-                                        <li>Duration: 4 years</li>
+                                        <li>Факультет: Др. Эмили Родригес</li>
+                                        <li>Требуемые кредиты: 128</li>
+                                        <li>Продолжительность: 4 года</li>
                                     </ul>
                                 </div>
                                 <div class="info-section">
-                                    <h4>Core Courses</h4>
+                                    <h4>Основные курсы</h4>
                                     <ul>
-                                        <li>• Calculus</li>
-                                        <li>• Physics</li>
-                                        <li>• Engineering Design</li>
-                                        <li>• Materials Science</li>
-                                        <li>• Thermodynamics</li>
+                                        <li>• Математический анализ</li>
+                                        <li>• Физика</li>
+                                        <li>• Инженерное проектирование</li>
+                                        <li>• Материаловедение</li>
+                                        <li>• Термодинамика</li>
                                     </ul>
                                 </div>
                             </div>
                             
-                            <button class="view-curriculum-btn">View Full Curriculum</button>
+                            <button class="view-curriculum-btn">Посмотреть полную программу</button>
                         </div>
 
                         <div id="healthcare" class="specialization-content">
-                            <h3>Healthcare</h3>
-                            <p>Prepare for careers in nursing, medical technology, and health administration.</p>
+                            <h3>Здравоохранение</h3>
+                            <p>Подготовка к карьере в сестринском деле, медицинских технологиях и управлении здравоохранением.</p>
                             
                             <div class="specialization-info">
                                 <div class="info-section">
-                                    <h4>Program Details</h4>
+                                    <h4>Детали программы</h4>
                                     <ul>
-                                        <li>Faculty: Dr. James Wilson</li>
-                                        <li>Credits Required: 124</li>
-                                        <li>Duration: 4 years</li>
+                                        <li>Факультет: Др. Джеймс Уилсон</li>
+                                        <li>Требуемые кредиты: 124</li>
+                                        <li>Продолжительность: 4 года</li>
                                     </ul>
                                 </div>
                                 <div class="info-section">
-                                    <h4>Core Courses</h4>
+                                    <h4>Основные курсы</h4>
                                     <ul>
-                                        <li>• Anatomy</li>
-                                        <li>• Physiology</li>
-                                        <li>• Medical Ethics</li>
-                                        <li>• Patient Care</li>
-                                        <li>• Healthcare Management</li>
+                                        <li>• Анатомия</li>
+                                        <li>• Физиология</li>
+                                        <li>• Медицинские этические принципы</li>
+                                        <li>• Пациентообеспечение</li>
+                                        <li>• Управление здравоохранением</li>
                                     </ul>
                                 </div>
                             </div>
                             
-                            <button class="view-curriculum-btn">View Full Curriculum</button>
+                            <button class="view-curriculum-btn">Посмотреть полную программу</button>
                         </div>
                     </div>
                 </div>
@@ -435,7 +435,7 @@
                                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
                                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
                             </svg>
-                            <h2>Digital Library</h2>
+                            <h2>Цифровая библиотека</h2>
                         </div>
                         <div class="library-resources">
                             <div class="resource-item">
@@ -443,8 +443,8 @@
                                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                                 </svg>
-                                <h3>Digital Library Catalog</h3>
-                                <p>Search thousands of books and journals</p>
+                                <h3>Каталог цифровой библиотеки</h3>
+                                <p>Поиск тысяч книг и журналов</p>
                             </div>
                             <div class="resource-item">
                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -452,8 +452,8 @@
                                     <polyline points="15,3 21,3 21,9"/>
                                     <line x1="10" y1="14" x2="21" y2="3"/>
                                 </svg>
-                                <h3>Research Databases</h3>
-                                <p>Access academic databases and publications</p>
+                                <h3>Исследовательские базы данных</h3>
+                                <p>Доступ к академическим базам данных и публикациям</p>
                             </div>
                             <div class="resource-item">
                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -461,16 +461,16 @@
                                     <polyline points="7,10 12,15 17,10"/>
                                     <line x1="12" y1="15" x2="12" y2="3"/>
                                 </svg>
-                                <h3>E-Books Collection</h3>
-                                <p>Download textbooks and reference materials</p>
+                                <h3>Коллекция электронных книг</h3>
+                                <p>Скачивание учебников и справочных материалов</p>
                             </div>
                             <div class="resource-item">
                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                                     <circle cx="12" cy="7" r="4"/>
                                 </svg>
-                                <h3>Study Rooms</h3>
-                                <p>Book private and group study spaces</p>
+                                <h3>Учебные комнаты</h3>
+                                <p>Бронирование индивидуальных и групповых учебных помещений</p>
                             </div>
                         </div>
                     </div>
@@ -482,21 +482,21 @@
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                                 <circle cx="12" cy="7" r="4"/>
                             </svg>
-                            <h2>Student Portal Access</h2>
+                            <h2>Доступ к студенческому порталу</h2>
                         </div>
                         <form class="portal-login-form" onsubmit="loginStudent(event)">
                             <div class="form-group">
-                                <label for="studentId">Student ID</label>
-                                <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" required>
+                                <label for="studentId">Студенческий ID</label>
+                                <input type="text" id="studentId" name="studentId" placeholder="Введите ваш студенческий ID" required>
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                <label for="password">Пароль</label>
+                                <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required>
                             </div>
-                            <button type="submit" class="login-btn">Login to Portal</button>
+                            <button type="submit" class="login-btn">Войти в портал</button>
                         </form>
                         <div class="forgot-password">
-                            <a href="#">Forgot your password?</a>
+                            <a href="#">Забыли пароль?</a>
                         </div>
                     </div>
                 </div>
@@ -513,32 +513,32 @@
                         <line x1="8" y1="2" x2="8" y2="6"/>
                         <line x1="3" y1="10" x2="21" y2="10"/>
                     </svg>
-                    <h2>Academic Calendar</h2>
+                    <h2>Академический календарь</h2>
                 </div>
                 <div class="calendar-grid">
                     <div class="calendar-item">
-                        <div class="calendar-date">Jan 20</div>
-                        <h3>Spring Semester Begins</h3>
+                        <div class="calendar-date">20 янв</div>
+                        <h3>Начало весеннего семестра</h3>
                     </div>
                     <div class="calendar-item">
-                        <div class="calendar-date">Feb 15</div>
-                        <h3>Mid-term Exams Week</h3>
+                        <div class="calendar-date">15 фев</div>
+                        <h3>Неделя промежуточных экзаменов</h3>
                     </div>
                     <div class="calendar-item">
-                        <div class="calendar-date">Mar 25</div>
-                        <h3>Spring Break</h3>
+                        <div class="calendar-date">25 мар</div>
+                        <h3>Весенние каникулы</h3>
                     </div>
                     <div class="calendar-item">
-                        <div class="calendar-date">Apr 30</div>
-                        <h3>Final Exams Begin</h3>
+                        <div class="calendar-date">30 апр</div>
+                        <h3>Начало финальных экзаменов</h3>
                     </div>
                     <div class="calendar-item">
-                        <div class="calendar-date">May 15</div>
-                        <h3>Graduation Ceremony</h3>
+                        <div class="calendar-date">15 мая</div>
+                        <h3>Церемония выпуска</h3>
                     </div>
                     <div class="calendar-item">
-                        <div class="calendar-date">Jun 1</div>
-                        <h3>Summer Session Starts</h3>
+                        <div class="calendar-date">1 июн</div>
+                        <h3>Начало летней сессии</h3>
                     </div>
                 </div>
             </div>
@@ -557,9 +557,9 @@
                                 <path d="M6 12v5c3 3 9 3 12 0v-5"/>
                             </svg>
                         </div>
-                        <h3>Example College</h3>
+                        <h3>Пермский колледж</h3>
                     </div>
-                    <p>Providing quality education and shaping future leaders through innovative programs and dedicated faculty.</p>
+                    <p>Обеспечиваем качественное образование и формируем будущих лидеров через инновационные программы и преданный преподавательский состав.</p>
                     <div class="social-links">
                         <a href="#" class="social-link">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -582,54 +582,54 @@
                 </div>
 
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Быстрые ссылки</h4>
                     <nav class="footer-nav">
-                        <a href="abitur.html">Admissions</a>
-                        <a href="students.html">Student Portal</a>
-                        <a href="about.html">About Us</a>
-                        <a href="contacts.html">Contact Us</a>
+                        <a href="abitur.html">Поступление</a>
+                        <a href="Students.html">Студенческий портал</a>
+                        <a href="about.html">О нас</a>
+                        <a href="Contacts.html">Связаться с нами</a>
                     </nav>
                 </div>
 
                 <div class="footer-section">
-                    <h4>Programs</h4>
+                    <h4>Программы</h4>
                     <nav class="footer-nav">
-                        <a href="#">Computer Science</a>
-                        <a href="#">Business Administration</a>
-                        <a href="#">Engineering</a>
-                        <a href="#">Healthcare</a>
+                        <a href="#">Информатика</a>
+                        <a href="#">Бизнес-администрирование</a>
+                        <a href="#">Инженерия</a>
+                        <a href="#">Здравоохранение</a>
                     </nav>
                 </div>
 
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h4>Контактная информация</h4>
                     <div class="contact-info">
                         <div class="contact-item">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
-                            <span>123 Education Street, Knowledge City, KC 12345</span>
+                            <span>ул. Образования, 123, г. Пермь, 614000</span>
                         </div>
                         <div class="contact-item">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                             </svg>
-                            <span>+1 (555) 123-4567</span>
+                            <span>+7 (342) 123-45-67</span>
                         </div>
                         <div class="contact-item">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                 <polyline points="22,6 12,13 2,6"/>
                             </svg>
-                            <span>info@examplecollege.edu</span>
+                            <span>info@permcollege.ru</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>Copyright © <span id="current-year"></span> Example College. All rights reserved.</p>
+                <p>Авторские права © <span id="current-year"></span> Пермский колледж. Все права защищены.</p>
             </div>
         </div>
     </footer>
@@ -642,7 +642,7 @@
                     <circle cx="11" cy="11" r="8"/>
                     <path d="m21 21-4.35-4.35"/>
                 </svg>
-                <input type="text" id="searchInput" placeholder="Search for programs, information, resources..." autocomplete="off">
+                <input type="text" id="searchInput" placeholder="Поиск программ, информации, ресурсов..." autocomplete="off">
                 <button class="search-close" onclick="closeSearch()">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="18" y1="6" x2="6" y2="18"/>
@@ -651,7 +651,7 @@
                 </button>
             </div>
             <div class="search-results" id="searchResults">
-                <div class="search-placeholder">Start typing to search...</div>
+                <div class="search-placeholder">Начните печатать для поиска...</div>
             </div>
         </div>
     </div>

@@ -1187,13 +1187,20 @@ section h2 {
 
 /* About Page Styles */
 .history-section {
-    background: var(--white);
+    padding: 80px 0;
+    background: white;
+}
+
+.history-section h2 {
+    text-align: center;
 }
 
 .history-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-top: 40px;
 }
 
 .history-text {
@@ -2381,5 +2388,522 @@ section h2 {
     
     .slider-btn, .gallery-nav {
         transition: none;
+    }
+}
+
+/* Academic Excellence Section */
+.academic-excellence {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.academic-excellence h2 {
+    color: white;
+    text-align: center;
+}
+
+.excellence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.excellence-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.excellence-card:hover {
+    transform: translateY(-5px);
+}
+
+.excellence-icon {
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.excellence-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* Student Life Section */
+.student-life {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.student-life-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.life-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.life-card:hover {
+    transform: translateY(-5px);
+}
+
+.life-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.life-content {
+    padding: 30px;
+}
+
+.life-content h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.life-content ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.life-content li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* Campus Facilities Section */
+.campus-facilities {
+    padding: 80px 0;
+    background: white;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.facility-card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.facility-card:hover {
+    background: white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.facility-icon {
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.facility-card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Research and Innovation Section */
+.research-innovation {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.research-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.research-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.research-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+/* Career Support Section */
+.career-support {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.career-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.career-card h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.career-card p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.career-card ul {
+    padding-left: 20px;
+}
+
+.career-card li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Mission and Values Section */
+.mission-values {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.mission-values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.mission-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission-icon {
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.mission-card h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mission-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.values-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.values-card h3 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.value-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.value-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.value-item h4 {
+    margin-bottom: 10px;
+    color: #667eea;
+}
+
+.value-item p {
+    color: #666;
+}
+
+/* Leadership Section */
+.leadership-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.leader-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+}
+
+.leader-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.leader-info {
+    padding: 30px;
+}
+
+.leader-info h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.leader-title {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.leader-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Partnerships Section */
+.partnerships-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.partnerships-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partnerships-text p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.partnerships-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.partnership-category {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.partnership-category h3 {
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.partnership-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.partnership-category li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.partnership-category li:last-child {
+    border-bottom: none;
+}
+
+/* Community Section */
+.community-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.community-card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.community-card:hover {
+    background: white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.community-icon {
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.community-card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.community-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Awards Section */
+.awards-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.award-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.award-icon {
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.award-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.award-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.award-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.award-card li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+    .excellence-grid,
+    .student-life-grid,
+    .facilities-grid,
+    .career-grid,
+    .mission-values-grid,
+    .leadership-grid,
+    .partnerships-grid,
+    .community-grid,
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .research-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .research-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .life-card img,
+    .leader-card img {
+        height: 200px;
+    }
+    
+    .excellence-card,
+    .facility-card,
+    .career-card,
+    .mission-card,
+    .values-card,
+    .partnership-category,
+    .community-card,
+    .award-card {
+        padding: 20px;
+    }
+    
+    .leader-info {
+        padding: 20px;
     }
 }
