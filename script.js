@@ -390,23 +390,19 @@ function initializeFAQ() {
     const faqQuestions = document.querySelectorAll('.faq-question');
     faqQuestions.forEach(question => {
         question.addEventListener('click', function() {
-            toggleFAQ(this);
+            const faqItem = this.closest('.faq-item');
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            const allFaqItems = document.querySelectorAll('.faq-item');
+            allFaqItems.forEach(item => item.classList.remove('active'));
+            
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
         });
     });
-}
-
-function toggleFAQ(questionElement) {
-    const faqItem = questionElement.closest('.faq-item');
-    const isActive = faqItem.classList.contains('active');
-    
-    // Close all FAQ items
-    const allFaqItems = document.querySelectorAll('.faq-item');
-    allFaqItems.forEach(item => item.classList.remove('active'));
-    
-    // Open clicked item if it wasn't active
-    if (!isActive) {
-        faqItem.classList.add('active');
-    }
 }
 
 // Timetable Functions

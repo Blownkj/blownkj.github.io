@@ -13,7 +13,7 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo-section">
+                <a href="index.html" class="logo-section">
                     <div class="logo">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
@@ -24,7 +24,7 @@
                         <h1>Example College</h1>
                         <p>Excellence in Education</p>
                     </div>
-                </div>
+                </a>
                 
                 <nav class="nav-desktop">
                     <a href="index.html" class="nav-link">Home</a>
@@ -138,22 +138,118 @@
         <section class="map-form-section">
             <div class="container">
                 <div class="map-form-grid">
-                    <!-- Interactive Map -->
+                    <!-- Campus Location -->
                     <div class="map-container">
                         <div class="map-header">
-                            <h3>Campus Location</h3>
+                            <h3>Campus Location & Information</h3>
                         </div>
-                        <div class="map-placeholder">
-                            <div class="map-content">
-                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <div class="campus-info-content">
+                            <div class="campus-main-info">
+                                <div class="campus-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <h4>Example College Main Campus</h4>
+                                <p class="campus-address">123 Education Street, Knowledge City, KC 12345</p>
+                                <p class="campus-phone">+1 (555) 123-4567</p>
+                            </div>
+                            
+                            <div class="campus-details">
+                                <div class="detail-section">
+                                    <h5>Getting Here</h5>
+                                    <div class="transport-options">
+                                        <div class="transport-item">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                                <path d="M2 17l10 5 10-5"/>
+                                                <path d="M2 12l10 5 10-5"/>
+                                            </svg>
+                                            <span>Metro: Knowledge Station (Line 3)</span>
+                                        </div>
+                                        <div class="transport-item">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="1" y="3" width="15" height="13"/>
+                                                <polygon points="16,8 20,8 23,11 23,16 16,16 16,8"/>
+                                            </svg>
+                                            <span>Bus: Routes 15, 22, 45</span>
+                                        </div>
+                                        <div class="transport-item">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                                            </svg>
+                                            <span>Bike: Dedicated bike lanes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h5>Campus Facilities</h5>
+                                    <div class="facilities-list">
+                                        <div class="facility-item">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                            </svg>
+                                            <span>Library & Study Centers</span>
+                                        </div>
+                                        <div class="facility-item">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                                <line x1="12" y1="17" x2="12" y2="21"/>
+                                            </svg>
+                                            <span>Computer Labs & Tech Centers</span>
+                                        </div>
+                                        <div class="facility-item">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                                <circle cx="9" cy="7" r="4"/>
+                                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                            </svg>
+                                            <span>Student Center & Cafeteria</span>
+                                        </div>
+                                        <div class="facility-item">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                                <line x1="12" y1="17" x2="12" y2="21"/>
+                                            </svg>
+                                            <span>Fitness Center & Sports Complex</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h5>Parking Information</h5>
+                                    <div class="parking-info">
+                                        <p><strong>Student Parking:</strong> Lot A & B (Free with student ID)</p>
+                                        <p><strong>Visitor Parking:</strong> Lot C ($5/day)</p>
+                                        <p><strong>Handicap Accessible:</strong> Designated spots in all lots</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h5>Hours of Operation</h5>
+                                    <div class="hours-info">
+                                        <p><strong>Monday - Friday:</strong> 7:00 AM - 10:00 PM</p>
+                                        <p><strong>Saturday:</strong> 8:00 AM - 6:00 PM</p>
+                                        <p><strong>Sunday:</strong> 10:00 AM - 4:00 PM</p>
+                                        <p><strong>Holidays:</strong> Limited hours, check website</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="directions-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                     <circle cx="12" cy="10" r="3"/>
                                 </svg>
-                                <h4>Example College Campus</h4>
-                                <p>123 Education Street</p>
-                                <p>Knowledge City, KC 12345</p>
-                                <button class="directions-btn">Get Directions</button>
-                            </div>
+                                Get Directions
+                            </button>
                         </div>
                     </div>
 

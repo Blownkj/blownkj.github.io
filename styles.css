@@ -13,6 +13,11 @@ body {
     min-height: 100vh;
 }
 
+.main {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -53,6 +58,13 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+}
+
+.logo-section:hover {
+    transform: scale(1.02);
 }
 
 .logo {
@@ -164,13 +176,16 @@ body {
     position: relative;
     height: 400px;
     overflow: hidden;
-    border-radius: 0 0 24px 24px;
+    margin-top: 0;
+    padding: 0;
 }
 
 .slider-container {
     position: relative;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .slide {
@@ -195,7 +210,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(33, 150, 243, 0.8), rgba(25, 118, 210, 0.6));
+    background: transparent;
 }
 
 .slide-content {
@@ -760,7 +775,7 @@ section h2 {
 
 .faq-item.active .faq-answer {
     padding: 0 24px 24px;
-    max-height: 200px;
+    max-height: 500px;
 }
 
 .faq-answer p {
@@ -1616,57 +1631,140 @@ section h2 {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: var(--shadow);
-}
-
-.map-header {
-    padding: 24px;
-    border-bottom: 1px solid var(--college-light);
-}
-
-.map-header h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--college-navy);
-    margin: 0;
-}
-
-.map-placeholder {
-    height: 400px;
-    background: linear-gradient(135deg, var(--college-light), var(--college-medium));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.map-content {
-    text-align: center;
-    color: var(--college-dark);
-}
-
-.map-content svg {
-    margin-bottom: 16px;
-}
-
-.map-content h4 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.map-content p {
-    margin-bottom: 4px;
-    color: var(--text-gray);
-}
-
-.contact-form-container {
     padding: 40px;
 }
 
-.contact-form-container h3 {
-    font-size: 1.5rem;
+.map-header {
+    margin-bottom: 32px;
+}
+
+.map-header h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+/* Campus Info Content */
+.campus-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.campus-main-info {
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--college-light);
+}
+
+.campus-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--college-blue), var(--college-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: var(--white);
+}
+
+.campus-main-info h4 {
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--college-navy);
-    margin-bottom: 32px;
+    margin-bottom: 8px;
+}
+
+.campus-address {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 4px;
+}
+
+.campus-phone {
+    font-size: 1.1rem;
+    color: var(--college-dark);
+    font-weight: 500;
+}
+
+.campus-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.detail-section h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--college-navy);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.transport-options, .facilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.transport-item, .facility-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+.transport-item svg, .facility-item svg {
+    color: var(--college-blue);
+    flex-shrink: 0;
+}
+
+.parking-info, .hours-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.parking-info p, .hours-info p {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.parking-info strong, .hours-info strong {
+    color: var(--college-navy);
+    font-weight: 600;
+}
+
+.directions-btn {
+    background: var(--college-dark);
+    color: var(--white);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    align-self: center;
+}
+
+.directions-btn:hover {
+    background: var(--college-navy);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Departments */
@@ -1893,6 +1991,16 @@ section h2 {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.contact-info .contact-item {
+    color: var(--college-light);
+    font-size: 0.9rem;
+}
+
+.contact-info .contact-item svg {
+    color: var(--college-light);
+    flex-shrink: 0;
 }
 
 .footer-bottom {
