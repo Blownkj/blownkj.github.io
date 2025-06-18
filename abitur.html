@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Example College</title>
+    <meta name="description" content="Apply to Example College - Learn about our admission process, requirements, and programs.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <div class="college-info">
+                        <h1>Example College</h1>
+                        <p>Excellence in Education</p>
+                    </div>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="abitur.html" class="nav-link active">Admissions</a>
+                    <a href="students.html" class="nav-link">Students</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contacts.html" class="nav-link">Contacts</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="search-btn" onclick="openSearch()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </button>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="abitur.html" class="nav-link active">Admissions</a>
+                <a href="students.html" class="nav-link">Students</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contacts.html" class="nav-link">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>Admissions</h1>
+                <p>Start your journey to academic excellence with Example College</p>
+            </div>
+        </section>
+
+        <!-- Application Process -->
+        <section class="application-process">
+            <div class="container">
+                <h2>Application Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Choose Program</h3>
+                        <p>Select your desired academic program</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Submit Application</h3>
+                        <p>Complete the online application form</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Document Review</h3>
+                        <p>We review your transcripts and documents</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Enrollment</h3>
+                        <p>Accept your offer and enroll in classes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Offered -->
+        <section class="programs-offered">
+            <div class="container">
+                <h2>Programs Offered</h2>
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <h3>Computer Science</h3>
+                        <p>Comprehensive program covering programming, algorithms, and software development.</p>
+                        <div class="program-duration">Duration: 4 years</div>
+                        <div class="program-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>High School Diploma</li>
+                                <li>Math Proficiency</li>
+                                <li>GPA 3.0+</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <h3>Business Administration</h3>
+                        <p>Learn management, finance, marketing, and entrepreneurship skills.</p>
+                        <div class="program-duration">Duration: 4 years</div>
+                        <div class="program-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>High School Diploma</li>
+                                <li>English Proficiency</li>
+                                <li>GPA 2.8+</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <h3>Engineering</h3>
+                        <p>Civil, Mechanical, and Electrical engineering specializations available.</p>
+                        <div class="program-duration">Duration: 4 years</div>
+                        <div class="program-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>High School Diploma</li>
+                                <li>Physics & Math</li>
+                                <li>GPA 3.2+</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <h3>Healthcare</h3>
+                        <p>Nursing, Medical Technology, and Health Administration programs.</p>
+                        <div class="program-duration">Duration: 4 years</div>
+                        <div class="program-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>High School Diploma</li>
+                                <li>Biology & Chemistry</li>
+                                <li>GPA 3.5+</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Dates & Documents -->
+        <section class="dates-documents">
+            <div class="container">
+                <div class="dates-documents-grid">
+                    <!-- Important Dates -->
+                    <div class="dates-section">
+                        <div class="section-header">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            <h2>Important Dates</h2>
+                        </div>
+                        <div class="dates-list">
+                            <div class="date-item">
+                                <div class="date-box">Mar 1</div>
+                                <div class="date-details">
+                                    <h4>Application Deadline - Fall Semester</h4>
+                                </div>
+                            </div>
+                            <div class="date-item">
+                                <div class="date-box">Apr 15</div>
+                                <div class="date-details">
+                                    <h4>Acceptance Letters Sent</h4>
+                                </div>
+                            </div>
+                            <div class="date-item">
+                                <div class="date-box">May 1</div>
+                                <div class="date-details">
+                                    <h4>Enrollment Confirmation Deadline</h4>
+                                </div>
+                            </div>
+                            <div class="date-item">
+                                <div class="date-box">Aug 20</div>
+                                <div class="date-details">
+                                    <h4>Orientation Week Begins</h4>
+                                </div>
+                            </div>
+                            <div class="date-item">
+                                <div class="date-box">Oct 1</div>
+                                <div class="date-details">
+                                    <h4>Application Opens - Spring Semester</h4>
+                                </div>
+                            </div>
+                            <div class="date-item">
+                                <div class="date-box">Dec 15</div>
+                                <div class="date-details">
+                                    <h4>Spring Semester Application Deadline</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Required Documents -->
+                    <div class="documents-section">
+                        <div class="section-header">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            <h2>Required Documents</h2>
+                        </div>
+                        <div class="documents-list">
+                            <div class="document-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Completed Application Form</span>
+                            </div>
+                            <div class="document-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Official High School Transcripts</span>
+                            </div>
+                            <div class="document-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Standardized Test Scores (SAT/ACT)</span>
+                            </div>
+                            <div class="document-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Letters of Recommendation (2)</span>
+                            </div>
+                            <div class="document-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Personal Statement/Essay</span>
+                            </div>
+                            <div class="document-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Application Fee ($50)</span>
+                            </div>
+                            <div class="document-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Proof of English Proficiency (International Students)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>What is the minimum GPA requirement?</h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>GPA requirements vary by program. Generally, we require a minimum 2.8 GPA, but competitive programs may require higher.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Can I apply to multiple programs?</h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can apply to up to 3 programs, but you must submit separate applications for each.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Is financial aid available?</h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer various scholarships, grants, and work-study programs. Complete the FAFSA to be considered.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>What if I miss the application deadline?</h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Late applications may be considered on a case-by-case basis, but we strongly encourage submitting before the deadline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form -->
+        <section class="application-form">
+            <div class="container">
+                <h2>Apply Now</h2>
+                <form class="admission-form" onsubmit="submitApplication(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="program">Desired Program</label>
+                            <select id="program" name="program" required>
+                                <option value="">Select a Program</option>
+                                <option value="computer-science">Computer Science</option>
+                                <option value="business">Business Administration</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="healthcare">Healthcare</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="gpa">Current GPA</label>
+                            <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="previousEducation">Previous Education</label>
+                        <input type="text" id="previousEducation" name="previousEducation" placeholder="High School Name or Previous College">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personalStatement">Personal Statement</label>
+                        <textarea id="personalStatement" name="personalStatement" rows="6" placeholder="Tell us about yourself, your goals, and why you want to join Example College..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                        </svg>
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <h3>Example College</h3>
+                    </div>
+                    <p>Providing quality education and shaping future leaders through innovative programs and dedicated faculty.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="abitur.html">Admissions</a>
+                        <a href="students.html">Student Portal</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contacts.html">Contact Us</a>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <nav class="footer-nav">
+                        <a href="#">Computer Science</a>
+                        <a href="#">Business Administration</a>
+                        <a href="#">Engineering</a>
+                        <a href="#">Healthcare</a>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>123 Education Street, Knowledge City, KC 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>info@examplecollege.edu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © <span id="current-year"></span> Example College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="search-modal">
+        <div class="search-modal-content">
+            <div class="search-header">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search for programs, information, resources..." autocomplete="off">
+                <button class="search-close" onclick="closeSearch()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <div class="search-placeholder">Start typing to search...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

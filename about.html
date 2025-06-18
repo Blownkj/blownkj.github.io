@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Example College</title>
+    <meta name="description" content="Learn about Example College - Our history, mission, faculty, and achievements in higher education.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <div class="college-info">
+                        <h1>Example College</h1>
+                        <p>Excellence in Education</p>
+                    </div>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="abitur.html" class="nav-link">Admissions</a>
+                    <a href="students.html" class="nav-link">Students</a>
+                    <a href="about.html" class="nav-link active">About Us</a>
+                    <a href="contacts.html" class="nav-link">Contacts</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="search-btn" onclick="openSearch()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </button>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="abitur.html" class="nav-link">Admissions</a>
+                <a href="students.html" class="nav-link">Students</a>
+                <a href="about.html" class="nav-link active">About Us</a>
+                <a href="contacts.html" class="nav-link">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>About Example College</h1>
+                <p>Empowering minds, shaping futures since 1965</p>
+            </div>
+        </section>
+
+        <!-- College History -->
+        <section class="history-section">
+            <div class="container">
+                <div class="history-content">
+                    <h2>Our History</h2>
+                    <div class="history-text">
+                        <p>
+                            Founded in 1965, Example College began as a small institution with a big vision: to provide 
+                            accessible, high-quality education that prepares students for meaningful careers and purposeful lives. 
+                            What started with just 200 students has grown into a thriving educational community of over 5,000 students.
+                        </p>
+                        <p>
+                            Over the decades, we have continuously evolved our programs and facilities to meet the changing 
+                            needs of society while maintaining our core commitment to academic excellence, innovation, and 
+                            student success. Today, we are proud to be recognized as a leading institution in higher education.
+                        </p>
+                        <p>
+                            Our campus has expanded to include state-of-the-art laboratories, modern classrooms, comprehensive 
+                            library facilities, and recreational spaces that support both academic achievement and personal growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission and Values -->
+        <section class="mission-values">
+            <div class="container">
+                <h2>Mission & Values</h2>
+                <div class="mission-values-grid">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To provide transformative educational experiences that empower students to achieve their academic 
+                            and professional goals while contributing positively to society.
+                        </p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>
+                            To be a leading institution recognized for academic excellence, innovative teaching, 
+                            cutting-edge research, and graduates who make meaningful contributions to their communities.
+                        </p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>
+                            Excellence, Integrity, Innovation, Diversity, Sustainability, and Student Success guide 
+                            everything we do as an educational community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Administration -->
+        <section class="administration-section">
+            <div class="container">
+                <h2>Leadership Team</h2>
+                <div class="administration-grid">
+                    <div class="admin-card">
+                        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Dr. Margaret Thompson" class="admin-photo">
+                        <h3>Dr. Margaret Thompson</h3>
+                        <p class="admin-position">President</p>
+                        <p class="admin-bio">Leading Example College with over 20 years of experience in higher education administration.</p>
+                    </div>
+                    <div class="admin-card">
+                        <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Prof. David Martinez" class="admin-photo">
+                        <h3>Prof. David Martinez</h3>
+                        <p class="admin-position">Vice President of Academic Affairs</p>
+                        <p class="admin-bio">Overseeing academic programs and curriculum development with expertise in educational innovation.</p>
+                    </div>
+                    <div class="admin-card">
+                        <img src="https://images.pexels.com/photos/3771806/pexels-photo-3771806.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Dr. Sarah Williams" class="admin-photo">
+                        <h3>Dr. Sarah Williams</h3>
+                        <p class="admin-position">Dean of Students</p>
+                        <p class="admin-bio">Supporting student success and campus life initiatives with a focus on holistic development.</p>
+                    </div>
+                    <div class="admin-card">
+                        <img src="https://images.pexels.com/photos/3777952/pexels-photo-3777952.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Mr. Robert Chen" class="admin-photo">
+                        <h3>Mr. Robert Chen</h3>
+                        <p class="admin-position">Director of Admissions</p>
+                        <p class="admin-bio">Managing admissions processes and helping prospective students navigate their journey to college.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faculty Information -->
+        <section class="faculty-section">
+            <div class="container">
+                <h2>Distinguished Faculty</h2>
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <div class="faculty-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Dr. Emily Rodriguez</h3>
+                            <p class="faculty-department">Engineering Department</p>
+                            <p><strong>Specialization:</strong> Renewable Energy Systems</p>
+                            <p class="faculty-achievements">Published 50+ research papers, NSF Grant recipient</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Prof. Michael Johnson</h3>
+                            <p class="faculty-department">Computer Science Department</p>
+                            <p><strong>Specialization:</strong> Artificial Intelligence</p>
+                            <p class="faculty-achievements">AI Innovation Award winner, Industry consultant</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Dr. Lisa Park</h3>
+                            <p class="faculty-department">Healthcare Department</p>
+                            <p><strong>Specialization:</strong> Public Health Policy</p>
+                            <p class="faculty-achievements">WHO advisory board member, 15 years clinical experience</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Prof. James Wilson</h3>
+                            <p class="faculty-department">Business Department</p>
+                            <p><strong>Specialization:</strong> International Trade</p>
+                            <p class="faculty-achievements">Former Fortune 500 executive, Business excellence award</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faculty-cta">
+                    <button class="view-all-faculty-btn">View All Faculty</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="achievements-section">
+            <div class="container">
+                <h2>Our Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-year">2024</div>
+                            <h3>Excellence in STEM Education Award</h3>
+                            <p>Recognized nationally for innovative STEM programs and student outcomes.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-year">2023</div>
+                            <h3>Top 100 Colleges for Innovation</h3>
+                            <p>Ranked among the most innovative institutions in higher education.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-year">2023</div>
+                            <h3>95% Graduate Employment Rate</h3>
+                            <p>Exceptional job placement rates for our graduating students.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-year">2022</div>
+                            <h3>Sustainability Leadership Award</h3>
+                            <p>Leading campus sustainability initiatives and environmental programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-container">
+                    <div class="main-gallery-image">
+                        <img id="mainGalleryImage" src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern Campus Buildings">
+                        <div class="gallery-overlay">
+                            <h3 id="galleryCaption">Modern Campus Buildings</h3>
+                        </div>
+                        <button class="gallery-nav prev" onclick="changeGalleryImage(-1)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="gallery-nav next" onclick="changeGalleryImage(1)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="gallery-thumbnails">
+                        <button class="thumbnail active" onclick="selectGalleryImage(0)">
+                            <img src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Modern Campus Buildings">
+                        </button>
+                        <button class="thumbnail" onclick="selectGalleryImage(1)">
+                            <img src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=200" alt="State-of-the-art Laboratories">
+                        </button>
+                        <button class="thumbnail" onclick="selectGalleryImage(2)">
+                            <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Library and Study Areas">
+                        </button>
+                        <button class="thumbnail" onclick="selectGalleryImage(3)">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Graduation Ceremonies">
+                        </button>
+                        <button class="thumbnail" onclick="selectGalleryImage(4)">
+                            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Student Activities">
+                        </button>
+                        <button class="thumbnail" onclick="selectGalleryImage(5)">
+                            <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Technology Centers">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="statistics-section">
+            <div class="container">
+                <div class="statistics-grid">
+                    <div class="stat-item">
+                        <h3>5,000+</h3>
+                        <p>Students</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>200+</h3>
+                        <p>Faculty Members</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Programs</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>95%</h3>
+                        <p>Job Placement Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <h3>Example College</h3>
+                    </div>
+                    <p>Providing quality education and shaping future leaders through innovative programs and dedicated faculty.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="abitur.html">Admissions</a>
+                        <a href="students.html">Student Portal</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contacts.html">Contact Us</a>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <nav class="footer-nav">
+                        <a href="#">Computer Science</a>
+                        <a href="#">Business Administration</a>
+                        <a href="#">Engineering</a>
+                        <a href="#">Healthcare</a>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>123 Education Street, Knowledge City, KC 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>info@examplecollege.edu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © <span id="current-year"></span> Example College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="search-modal">
+        <div class="search-modal-content">
+            <div class="search-header">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search for programs, information, resources..." autocomplete="off">
+                <button class="search-close" onclick="closeSearch()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <div class="search-placeholder">Start typing to search...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
