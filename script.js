@@ -1,9 +1,9 @@
-// Global Variables
+
 let currentSlide = 0;
 let currentGalleryImage = 0;
 let slideInterval;
 
-// Gallery Images Data
+
 const galleryImages = [
     {
         url: 'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -31,7 +31,7 @@ const galleryImages = [
     }
 ];
 
-// Search Data
+
 const searchData = [
     'Программа информатики',
     'Бизнес-администрирование',
@@ -55,7 +55,7 @@ const searchData = [
     'Карьерные услуги'
 ];
 
-// Initialize when DOM is loaded
+
 document.addEventListener('DOMContentLoaded', function() {
     initializeSlider();
     initializeSearch();
@@ -67,18 +67,18 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeFAQ();
 });
 
-// Slider Functions
+
 function initializeSlider() {
     const slides = document.querySelectorAll('.slide');
     const indicators = document.querySelectorAll('.indicator');
     
     if (slides.length > 0) {
-        // Auto-advance slides
+
         slideInterval = setInterval(() => {
             changeSlide(1);
         }, 5000);
         
-        // Pause on hover
+
         const sliderContainer = document.querySelector('.hero-slider');
         if (sliderContainer) {
             sliderContainer.addEventListener('mouseenter', () => {
@@ -100,16 +100,16 @@ function changeSlide(direction) {
     
     if (slides.length === 0) return;
     
-    // Remove active class from current slide and indicator
+
     slides[currentSlide].classList.remove('active');
     if (indicators[currentSlide]) {
         indicators[currentSlide].classList.remove('active');
     }
     
-    // Calculate next slide
+
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
     
-    // Add active class to new slide and indicator
+
     slides[currentSlide].classList.add('active');
     if (indicators[currentSlide]) {
         indicators[currentSlide].classList.add('active');
@@ -122,25 +122,25 @@ function goToSlide(index) {
     
     if (slides.length === 0 || index < 0 || index >= slides.length) return;
     
-    // Remove active class from current slide and indicator
+
     slides[currentSlide].classList.remove('active');
     if (indicators[currentSlide]) {
         indicators[currentSlide].classList.remove('active');
     }
     
-    // Set new slide
+
     currentSlide = index;
     
-    // Add active class to new slide and indicator
+
     slides[currentSlide].classList.add('active');
     if (indicators[currentSlide]) {
         indicators[currentSlide].classList.add('active');
     }
 }
 
-// Navigation Functions
+
 function initializeNavigation() {
-    // Set active navigation link based on current page
+
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-link');
     
@@ -163,7 +163,7 @@ function toggleMobileMenu() {
     }
 }
 
-// Search Functions
+
 function initializeSearch() {
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
@@ -236,9 +236,9 @@ function handleSearch(event) {
     }
 }
 
-// Form Functions
+
 function initializeForms() {
-    // Add form validation and submission handlers
+
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
@@ -268,7 +268,7 @@ function validateForm(form) {
 function submitApplication(event) {
     event.preventDefault();
     
-    // Simulate form submission
+
     const submitBtn = event.target.querySelector('.submit-btn');
     const originalText = submitBtn.innerHTML;
     
@@ -286,7 +286,7 @@ function submitApplication(event) {
 function submitContactForm(event) {
     event.preventDefault();
     
-    // Simulate form submission
+
     const submitBtn = event.target.querySelector('.submit-btn');
     const originalText = submitBtn.innerHTML;
     
@@ -304,7 +304,7 @@ function submitContactForm(event) {
 function loginStudent(event) {
     event.preventDefault();
     
-    // Simulate login
+
     const loginBtn = event.target.querySelector('.login-btn');
     const originalText = loginBtn.innerHTML;
     
@@ -319,7 +319,7 @@ function loginStudent(event) {
     }, 2000);
 }
 
-// Gallery Functions
+
 function initializeGallery() {
     if (document.getElementById('mainGalleryImage')) {
         updateGalleryImage();
@@ -350,15 +350,15 @@ function updateGalleryImage() {
         caption.textContent = galleryImages[currentGalleryImage].caption;
     }
     
-    // Update thumbnail active state
+
     thumbnails.forEach((thumbnail, index) => {
         thumbnail.classList.toggle('active', index === currentGalleryImage);
     });
 }
 
-// Specializations Functions
+
 function initializeSpecializations() {
-    // Set default active specialization
+
     const defaultBtn = document.querySelector('.specialization-btn');
     if (defaultBtn) {
         selectSpecialization('computer-science', defaultBtn);
@@ -366,14 +366,14 @@ function initializeSpecializations() {
 }
 
 function selectSpecialization(specializationId, buttonElement) {
-    // Remove active class from all buttons and content
+
     const buttons = document.querySelectorAll('.specialization-btn');
     const contents = document.querySelectorAll('.specialization-content');
     
     buttons.forEach(btn => btn.classList.remove('active'));
     contents.forEach(content => content.classList.remove('active'));
     
-    // Add active class to selected button and content
+
     if (buttonElement) {
         buttonElement.classList.add('active');
     }
@@ -384,20 +384,20 @@ function selectSpecialization(specializationId, buttonElement) {
     }
 }
 
-// FAQ Functions
+
 function initializeFAQ() {
-    // Add click handlers to FAQ questions
+
     const faqQuestions = document.querySelectorAll('.faq-question');
     faqQuestions.forEach(question => {
         question.addEventListener('click', function() {
             const faqItem = this.closest('.faq-item');
             const isActive = faqItem.classList.contains('active');
             
-            // Close all FAQ items
+
             const allFaqItems = document.querySelectorAll('.faq-item');
             allFaqItems.forEach(item => item.classList.remove('active'));
             
-            // Open clicked item if it wasn't active
+
             if (!isActive) {
                 faqItem.classList.add('active');
             }
@@ -405,10 +405,9 @@ function initializeFAQ() {
     });
 }
 
-// Timetable Functions
+
 function changeWeek(weekValue) {
-    // This would typically update the timetable data
-    // For now, we'll just show a message
+
     console.log('Changed to week:', weekValue);
 }
 
@@ -422,7 +421,7 @@ function updateCurrentYear() {
     });
 }
 
-// Close modals when clicking outside
+
 document.addEventListener('click', function(event) {
     const searchModal = document.getElementById('searchModal');
     
@@ -431,9 +430,8 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Handle window resize
 window.addEventListener('resize', function() {
-    // Close mobile menu on resize to desktop
+
     if (window.innerWidth > 768) {
         const mobileNav = document.querySelector('.nav-mobile');
         const menuBtn = document.querySelector('.mobile-menu-btn');
@@ -447,7 +445,7 @@ window.addEventListener('resize', function() {
     }
 });
 
-// Smooth scrolling for anchor links
+
 document.addEventListener('click', function(event) {
     const target = event.target.closest('a[href^="#"]');
     if (target) {
@@ -464,11 +462,11 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Add loading states to buttons
+
 document.addEventListener('click', function(event) {
     const button = event.target.closest('button[type="submit"]');
     if (button && !button.disabled) {
-        // Add loading state visual feedback
+
         button.style.opacity = '0.8';
         setTimeout(() => {
             button.style.opacity = '1';
@@ -476,7 +474,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Intersection Observer for animations
+
 if ('IntersectionObserver' in window) {
     const observerOptions = {
         threshold: 0.1,
@@ -492,7 +490,7 @@ if ('IntersectionObserver' in window) {
         });
     }, observerOptions);
     
-    // Observe elements that should animate in
+
     const animateElements = document.querySelectorAll('.quick-link-card, .program-card, .mission-card, .achievement-card');
     animateElements.forEach(element => {
         element.style.opacity = '0';
@@ -502,14 +500,14 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-// Keyboard navigation support
+
 document.addEventListener('keydown', function(event) {
-    // ESC key closes modals
+
     if (event.key === 'Escape') {
         closeSearch();
     }
     
-    // Arrow keys for slider navigation
+
     if (event.key === 'ArrowLeft' && document.querySelector('.hero-slider')) {
         changeSlide(-1);
     }
@@ -517,7 +515,7 @@ document.addEventListener('keydown', function(event) {
         changeSlide(1);
     }
     
-    // Arrow keys for gallery navigation
+
     if (event.key === 'ArrowLeft' && document.querySelector('.gallery-section')) {
         changeGalleryImage(-1);
     }
@@ -526,7 +524,7 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// Performance optimization: Lazy load images
+
 if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
@@ -541,12 +539,12 @@ if ('IntersectionObserver' in window) {
         });
     });
     
-    // Observe images with data-src attribute
+
     const lazyImages = document.querySelectorAll('img[data-src]');
     lazyImages.forEach(img => imageObserver.observe(img));
 }
 
-// Error handling for images
+
 document.addEventListener('error', function(event) {
     if (event.target.tagName === 'IMG') {
         event.target.style.display = 'none';
@@ -554,19 +552,18 @@ document.addEventListener('error', function(event) {
     }
 }, true);
 
-// Add focus management for accessibility
+
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Tab') {
-        // Add visible focus indicators
+
         document.body.classList.add('keyboard-navigation');
     }
 });
 
 document.addEventListener('mousedown', function() {
-    // Remove focus indicators when using mouse
+
     document.body.classList.remove('keyboard-navigation');
 });
 
-// Console welcome message
-console.log('%cWelcome to Example College Website!', 'color: #2196F3; font-size: 16px; font-weight: bold;');
-console.log('%cBuilt with modern web technologies for optimal performance and accessibility.', 'color: #666; font-size: 12px;');
+
+console.log('%cДобро пожаловать на сайт нашего колледжа.', 'color: #2196F3; font-size: 16px; font-weight: bold;');

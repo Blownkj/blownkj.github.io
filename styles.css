@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ body {
     padding: 0 20px;
 }
 
-/* Color Variables */
+
 :root {
     --college-light: #E3F2FD;
     --college-medium: #BBDEFB;
@@ -38,7 +38,7 @@ body {
     --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Header Styles */
+
 .header {
     background: var(--white);
     box-shadow: var(--shadow);
@@ -96,7 +96,7 @@ body {
     margin: 0;
 }
 
-/* Navigation Styles */
+
 .nav-desktop {
     display: flex;
     gap: 32px;
@@ -144,7 +144,7 @@ body {
     color: var(--college-dark);
 }
 
-/* Mobile Menu */
+
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
@@ -171,7 +171,7 @@ body {
     display: flex;
 }
 
-/* Hero Sections */
+
 .hero-slider {
     position: relative;
     height: 400px;
@@ -244,7 +244,7 @@ body {
     color: var(--college-light);
 }
 
-/* Slider Controls */
+
 .slider-btn {
     position: absolute;
     top: 50%;
@@ -297,7 +297,7 @@ body {
     transform: scale(1.2);
 }
 
-/* Page Hero */
+
 .page-hero {
     background: linear-gradient(135deg, var(--college-blue), var(--college-dark));
     color: var(--white);
@@ -320,7 +320,7 @@ body {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Section Styles */
+
 section {
     padding: 80px 0;
 }
@@ -333,7 +333,7 @@ section h2 {
     margin-bottom: 48px;
 }
 
-/* Welcome Section */
+
 .welcome-section {
     background: var(--white);
     text-align: center;
@@ -351,7 +351,7 @@ section h2 {
     line-height: 1.8;
 }
 
-/* Quick Links */
+
 .quick-links {
     background: var(--white);
 }
@@ -409,7 +409,7 @@ section h2 {
     color: var(--text-gray);
 }
 
-/* Events and Announcements */
+
 .events-announcements {
     background: var(--college-light);
 }
@@ -509,7 +509,7 @@ section h2 {
     margin: 0;
 }
 
-/* Application Process */
+
 .application-process {
     background: var(--white);
 }
@@ -566,7 +566,7 @@ section h2 {
     color: var(--text-gray);
 }
 
-/* Programs Grid */
+
 .programs-offered {
     background: var(--college-light);
 }
@@ -635,7 +635,7 @@ section h2 {
     left: 0;
 }
 
-/* Dates and Documents */
+
 .dates-documents {
     background: var(--white);
 }
@@ -720,7 +720,7 @@ section h2 {
     color: var(--text-gray);
 }
 
-/* FAQ Section */
+
 .faq-section {
     background: var(--college-light);
 }
@@ -785,7 +785,7 @@ section h2 {
     margin: 0;
 }
 
-/* Forms */
+
 .application-form, .admission-form, .contact-form, .portal-login-form {
     background: var(--college-light);
     padding: 40px;
@@ -854,7 +854,7 @@ section h2 {
     box-shadow: var(--shadow-lg);
 }
 
-/* Student Portal Styles */
+
 .timetable-section {
     background: var(--white);
 }
@@ -964,7 +964,7 @@ section h2 {
     color: var(--text-gray);
 }
 
-/* Specializations */
+
 .specializations-section {
     background: var(--college-light);
 }
@@ -1060,7 +1060,7 @@ section h2 {
     margin-bottom: 6px;
 }
 
-/* Library and Portal */
+
 .library-portal-section {
     background: var(--white);
 }
@@ -1132,7 +1132,7 @@ section h2 {
     text-decoration: underline;
 }
 
-/* Academic Calendar */
+
 .academic-calendar {
     background: var(--college-light);
 }
@@ -1186,7 +1186,7 @@ section h2 {
     margin: 0;
 }
 
-/* About Page Styles */
+
 .history-section {
     padding: 80px 0;
     background: white;
@@ -1263,7 +1263,7 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Administration */
+
 .administration-section {
     background: var(--white);
 }
@@ -1317,7 +1317,7 @@ section h2 {
     line-height: 1.5;
 }
 
-/* Faculty */
+
 .faculty-section {
     background: var(--college-light);
 }
@@ -1386,7 +1386,7 @@ section h2 {
     margin-top: 32px;
 }
 
-/* Achievements */
+
 .achievements-section {
     background: var(--white);
 }
@@ -1448,7 +1448,7 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Gallery */
+
 .gallery-section {
     background: var(--college-light);
 }
@@ -1547,7 +1547,7 @@ section h2 {
     object-fit: cover;
 }
 
-/* Statistics */
+
 .statistics-section {
     background: var(--college-navy);
     color: var(--white);
@@ -1571,7 +1571,7 @@ section h2 {
     font-size: 1.1rem;
 }
 
-/* Contact Page Styles */
+
 .contact-info-section {
     background: var(--white);
 }
@@ -1622,7 +1622,7 @@ section h2 {
     font-size: 0.95rem;
 }
 
-/* Map and Form */
+
 .map-form-section {
     background: var(--college-light);
 }
@@ -1653,7 +1653,7 @@ section h2 {
     margin: 0;
 }
 
-/* Campus Info Content */
+
 .campus-info-content {
     display: flex;
     flex-direction: column;
@@ -1775,7 +1775,7 @@ section h2 {
     box-shadow: var(--shadow-lg);
 }
 
-/* Departments */
+
 .departments-section {
     background: var(--white);
 }
@@ -1825,7 +1825,7 @@ section h2 {
     flex-shrink: 0;
 }
 
-/* Social Media */
+
 .social-media-section {
     background: var(--college-light);
     text-align: center;
@@ -1879,7 +1879,7 @@ section h2 {
     color: #0A66C2;
 }
 
-/* Emergency Contacts */
+
 .emergency-contacts {
     background: var(--college-navy);
     color: var(--white);
@@ -1910,7 +1910,7 @@ section h2 {
     color: var(--white);
 }
 
-/* Footer */
+
 .footer {
     background: var(--college-navy);
     color: var(--white);
@@ -2022,7 +2022,7 @@ section h2 {
     margin: 0;
 }
 
-/* Search Modal */
+
 .search-modal {
     position: fixed;
     top: 0;
@@ -2115,7 +2115,7 @@ section h2 {
     background: var(--college-light);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -2149,7 +2149,7 @@ section h2 {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .nav-desktop {
         display: none;
@@ -2327,7 +2327,7 @@ section h2 {
     }
 }
 
-/* Print Styles */
+
 @media print {
     .header, .footer, .search-modal {
         display: none;
@@ -2360,7 +2360,7 @@ section h2 {
     }
 }
 
-/* High Contrast Mode */
+
 @media (prefers-contrast: high) {
     :root {
         --college-light: #f0f0f0;
@@ -2375,7 +2375,7 @@ section h2 {
     }
 }
 
-/* Reduced Motion */
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -2392,7 +2392,7 @@ section h2 {
     }
 }
 
-/* Academic Excellence Section */
+
 .academic-excellence {
     padding: 80px 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -2434,7 +2434,7 @@ section h2 {
     font-size: 1.3rem;
 }
 
-/* Student Life Section */
+
 .student-life {
     padding: 80px 0;
     background: #f8f9fa;
@@ -2484,7 +2484,7 @@ section h2 {
     color: #666;
 }
 
-/* Campus Facilities Section */
+
 .campus-facilities {
     padding: 80px 0;
     background: white;
@@ -2521,7 +2521,7 @@ section h2 {
     color: #333;
 }
 
-/* Research and Innovation Section */
+
 .research-innovation {
     padding: 80px 0;
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -2562,7 +2562,7 @@ section h2 {
     color: #ffd700;
 }
 
-/* Career Support Section */
+
 .career-support {
     padding: 80px 0;
     background: #f8f9fa;
@@ -2603,7 +2603,7 @@ section h2 {
     color: #555;
 }
 
-/* Mission and Values Section */
+
 .mission-values {
     padding: 80px 0;
     background: #f8f9fa;
@@ -2671,7 +2671,7 @@ section h2 {
     color: #666;
 }
 
-/* Leadership Section */
+
 .leadership-section {
     padding: 80px 0;
     background: white;
@@ -2722,7 +2722,7 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Partnerships Section */
+
 .partnerships-section {
     padding: 80px 0;
     background: #f8f9fa;
@@ -2776,7 +2776,7 @@ section h2 {
     border-bottom: none;
 }
 
-/* Community Section */
+
 .community-section {
     padding: 80px 0;
     background: white;
@@ -2818,7 +2818,7 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Awards Section */
+
 .awards-section {
     padding: 80px 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -2865,7 +2865,7 @@ section h2 {
     border-bottom: none;
 }
 
-/* Responsive Design for New Sections */
+
 @media (max-width: 768px) {
     .excellence-grid,
     .student-life-grid,
