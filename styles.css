@@ -1900,7 +1900,7 @@ section h2 {
 }
 
 .emergency-card p {
-    color: var(--college-light);
+    color: gray;
     margin-bottom: 8px;
 }
 
